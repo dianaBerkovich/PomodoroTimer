@@ -1,0 +1,24 @@
+{% extends "template.html" %}
+
+{% block My_title %}
+    ToDo Page
+{% endblock %}
+
+{% block content %}
+<h2>ToDo List content</h2>
+<form method = "post">
+{% csrf_token %}
+    <input type="text" placeholder="ToDo Title" > <br>
+    <textarea placeholder="ToDo Description"></textarea> <br>
+    <label for = "date">Deadline</label> <br>
+    <input type="date" id = "date"> <br>
+    <button type = "submit"> Add Item </button>
+</form>
+<!--{{ todo_list }}-->
+{% for todo in todo_list %}
+<div style="border:1px solid black">
+    <h2>{{todo.title }}</h2>
+    <p>{{todo.description}}</p>
+</div>
+{% endfor %}
+{%endblock%}

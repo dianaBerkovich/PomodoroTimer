@@ -1,0 +1,26 @@
+{% extends "template.html" %}
+
+{% block My_title %}
+    Maine Page
+{% endblock %}
+
+{% block content %}
+
+    {% include "header.html" %}
+
+    Template file
+    <h1> {{ title }} </h1>
+    <!--<h2> {{ my_country }}</h2>-->
+    <h2> {{ numbers }}</h2>
+
+    {% for num in numbers %}
+        <h3>{{ num }}</h3>
+    {% endfor %}
+
+    {% if my_country %}
+        <h1> My Country is {{ my_country }} </h1>
+    {% else %}
+        Country is undefined
+    {% endif %}
+
+{%endblock%}
