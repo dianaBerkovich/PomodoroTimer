@@ -8,10 +8,11 @@
 <h2>ToDo List content</h2>
 <form method = "post">
 {% csrf_token %}
-    <input type="text" placeholder="ToDo Title" > <br>
-    <textarea placeholder="ToDo Description"></textarea> <br>
-    <label for = "date">Deadline</label> <br>
-    <input type="date" id = "date"> <br>
+    {{form.as_p}}
+<!--    <input type="text" placeholder="ToDo Title" > <br>-->
+<!--    <textarea placeholder="ToDo Description"></textarea> <br>-->
+<!--    <label for = "date">Deadline</label> <br>-->
+<!--    <input type="date" id = "date"> <br>-->
     <button type = "submit"> Add Item </button>
 </form>
 <!--{{ todo_list }}-->

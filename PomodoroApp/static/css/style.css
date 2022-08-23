@@ -1,0 +1,23 @@
+
+    input {
+    padding: 5px;
+    margin: 10px;
+    width: 300px;
+    }
+    textarea {
+    padding: 5px;
+    margin: 10px;
+    width: 300px;
+    height: 100px;
+    }
+    label {
+    padding: 5px;
+    margin: 10px;
+    }
+    button {
+    padding: 5px;
+    margin: 10px;
+    }
+
+
+
