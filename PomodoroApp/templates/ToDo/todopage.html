@@ -16,10 +16,15 @@
     <button type = "submit"> Add Item </button>
 </form>
 <!--{{ todo_list }}-->
+<button><a href="delete_all/">delete all</a></button>
+
+
 {% for todo in todo_list %}
 <div style="border:1px solid black">
     <h2>{{todo.title }}</h2>
     <p>{{todo.description}}</p>
+    <button><a href="delete/{{ todo.id }}">delete</a></button>
+    <button><a href="update/{{ todo.id }}">update</a></button>
 </div>
 {% endfor %}
 {%endblock%}

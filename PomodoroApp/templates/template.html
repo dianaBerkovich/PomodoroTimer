@@ -1,10 +1,8 @@
 {% load static %}
-
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<Link rel = "stylesheet"  href = "{% static 'css/style.css' %} " type = "text/css">
+<link rel = "stylesheet"  href = "{% static 'css/style.css' %} " type = "text/css">
     <meta charset="UTF-8">
     <title>
         {% block My_title %}
@@ -19,6 +17,6 @@
 {% endblock %}
 
 <h1> Text after content </h1>
-
+<script src = "{% static 'js/index.js' %}"></script>
 </body>
 </html>

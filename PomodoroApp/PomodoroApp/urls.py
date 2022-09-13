@@ -21,4 +21,5 @@ urlpatterns = [
     path('pomodoro/', include('Main.urls')),
     path('timer/', include('Timer.urls')),
     path('todo/', include('ToDo.urls')),
+    path('', include('Main.urls')),
 ]
